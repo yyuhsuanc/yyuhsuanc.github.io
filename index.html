@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>個人電子名片 | Sarah Chen</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="theme-dark" data-lang="zh">
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SC</span>
+        <div>
+          <p class="brand-name">Sarah Chen</p>
+          <p class="brand-sub">台北醫學大學 藥學系大一 / 閱讀愛好者</p>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="langToggle" class="btn-toggle" aria-label="切換語言">EN</button>
+        <button id="themeToggle" class="btn-toggle" aria-label="切換主題">☾</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="decor-clouds">
+          <div class="cloud cloud-1"></div>
+          <div class="cloud cloud-2"></div>
+          <div class="cloud cloud-3"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow" data-zh="嗨，我是" data-en="Hi, I am">嗨，我是</p>
+          <h1 class="hero-title" data-zh="陳宥瑄 Sarah Chen" data-en="Sarah Chen">陳宥瑄 Sarah Chen</h1>
+          <p class="hero-description" data-zh="台北醫學大學藥學系大一新生，喜愛閱讀與健康科普，致力於將藥學知識融入日常生活。" data-en="First-year pharmacy student at Taipei Medical University who loves reading and health science. I aim to make pharmaceutical knowledge approachable and inspiring.">台北醫學大學藥學系大一新生，喜愛閱讀與健康科普，致力於將藥學知識融入日常生活。</p>
+          <div class="hero-tags">
+            <span data-zh="閱讀" data-en="Reading">閱讀</span>
+            <span data-zh="藥學" data-en="Pharmacy">藥學</span>
+            <span data-zh="newjeans" data-en="newjeans">newjeans</span>
+            <span data-zh="cortis" data-en="cortis">cortis</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#about" class="action-btn" data-zh="了解更多" data-en="Discover">了解更多</a>
+            <a href="#contact" class="action-btn alt" data-zh="聯絡我" data-en="Contact">聯絡我</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-card">
+            <div class="visual-glow"></div>
+            <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80" alt="個人形象照" />
+            <div class="visual-meta">
+              <p data-zh="健康閱讀與藥學啟航" data-en="Health reading and pharmacy journey">健康閱讀與藥學啟航</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-header">
+          <p class="section-label" data-zh="關於我" data-en="About Me">關於我</p>
+          <h2 data-zh="從閱讀到藥學，為健康加分" data-en="From reading to pharmacy, adding value to wellness">從閱讀到藥學，為健康加分</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p data-zh="我是台北醫學大學藥學系(藥學組)大一新生，19 歲，畢業於台北市薇閣高級中學。平常喜歡閱讀科普、小說與歷史書，並將好奇心帶進藥學學習。我最喜歡的明星是 newjeans cortis。" data-en="I am a first-year pharmacy student at Taipei Medical University, 19 years old, graduated from Taipei Wego Senior High School. I enjoy reading science, fiction, and history, bringing curiosity into pharmacy studies. My favorite artist is newjeans cortis.">我是台北醫學大學藥學系(藥學組)大一新生，19 歲，畢業於台北市薇閣高級中學。平常喜歡閱讀科普、小說與歷史書，並將好奇心帶進藥學學習。我最喜歡的明星是 newjeans cortis。</p>
+            <ul>
+              <li><span data-zh="主修" data-en="Major">主修</span>: 藥學系(藥學組)</li>
+              <li><span data-zh="學校" data-en="School">學校</span>: 台北醫學大學</li>
+              <li><span data-zh="興趣" data-en="Hobbies">興趣</span>: 閱讀、寫作、健康科普</li>
+            </ul>
+          </div>
+          <div class="about-stats">
+              <div class="stat-card">
+              <h3>19</h3>
+              <p data-zh="歲" data-en="Years old">歲</p>
+            </div>
+            <div class="stat-card">
+              <h3>1</h3>
+              <p data-zh="年大學生涯" data-en="Year as a student">年大學生涯</p>
+            </div>
+            <div class="stat-card">
+              <h3>1</h3>
+              <p data-zh="薇閣高中畢業" data-en="Wego High School graduate">薇閣高中畢業</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section achievements" id="achievements">
+        <div class="section-header">
+          <p class="section-label" data-zh="事蹟精選" data-en="Highlights">事蹟精選</p>
+          <h2 data-zh="從構想到實現的跨界故事" data-en="Stories from concept to reality">從構想到實現的跨界故事</h2>
+        </div>
+        <div class="achievement-cards">
+          <article class="achievement-card">
+            <div class="card-icon">01</div>
+            <h3 data-zh="高中科學讀書會" data-en="Science Study Club">高中科學讀書會</h3>
+            <p data-zh="在薇閣高中的科學讀書會中分享閱讀心得，將生物、化學與健康知識轉化成簡潔筆記。" data-en="Shared study notes in the Wego science club, turning biology, chemistry, and health knowledge into clear summaries.">在薇閣高中的科學讀書會中分享閱讀心得，將生物、化學與健康知識轉化成簡潔筆記。</p>
+          </article>
+          <article class="achievement-card">
+            <div class="card-icon">02</div>
+            <h3 data-zh="閱讀筆記專案" data-en="Reading Notes Project">閱讀筆記專案</h3>
+            <p data-zh="發起多本閱讀筆記整理，建立日常閱讀習慣，並記錄藥學相關概念與生活應用。" data-en="Started a reading notes project to keep a daily reading habit while recording pharmacy concepts and practical insights.">發起多本閱讀筆記整理，建立日常閱讀習慣，並記錄藥學相關概念與生活應用。</p>
+          </article>
+          <article class="achievement-card">
+            <div class="card-icon">03</div>
+            <h3 data-zh="健康科普文章" data-en="Health Writing">健康科普文章</h3>
+            <p data-zh="撰寫校內健康科普短文，將藥學常識轉化為易懂的生活建議，分享給同學與家人。" data-en="Wrote health science articles for school, translating pharmacy facts into easy-to-understand lifestyle tips for classmates and family.">撰寫校內健康科普短文，將藥學常識轉化為易懂的生活建議，分享給同學與家人。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-header">
+          <p class="section-label" data-zh="聯絡我" data-en="Contact">聯絡我</p>
+          <h2 data-zh="隨時歡迎合作與交流" data-en="Always open to collaborate">隨時歡迎合作與交流</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3 data-zh="電子郵件" data-en="Email">電子郵件</h3>
+            <p>sarahchen0729@gmail.com</p>
+          </div>
+          <div class="contact-card">
+            <h3 data-zh="電話" data-en="Phone">電話</h3>
+            <p>+886 0972 972 331</p>
+          </div>
+          <div class="contact-card">
+            <h3 data-zh="社群" data-en="Social">社群</h3>
+            <p><a href="https://www.instagram.com/yyuhsuanc" target="_blank">Instagram / @yyuhsuanc</a></p>
+          </div>
+        </div>
+        <div class="contact-note">
+          <p data-zh="歡迎與我分享學習建議、交換閱讀心得或討論藥學、健康相關議題。" data-en="Feel free to share study tips, discuss reading, or chat about pharmacy and wellness topics.">歡迎與我分享學習建議、交換閱讀心得或討論藥學、健康相關議題。</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p data-zh="© 2026 陳宥瑄 Sarah Chen。閱讀、學習、健康。" data-en="© 2026 Sarah Chen. Reading, learning, wellness.">© 2026 陳宥瑄 Sarah Chen。閱讀、學習、健康。</p>
+    </footer>
+  </div>
+</body>
+</html>
